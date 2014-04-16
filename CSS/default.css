@@ -1,0 +1,22 @@
+
+body {
+    background-color: #000000;
+    font-family: monospace;
+    color: white;
+}
+
+header {
+    font-size: 30pt;
+    margin: auto;
+    text-align: center;
+    border: 3px dotted white;
+    border-radius: 3em;
+    width: 60%;
+}
+
+#img_div {
+    border: dotted 3px white;
+    width: 60%;
+    margin: auto;
+    border-radius: 3em;
+}

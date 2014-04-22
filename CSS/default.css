@@ -20,3 +20,73 @@ header {
     margin: auto;
     border-radius: 3em;
 }
+
+#first_num {
+    width: 43%;
+    font-family: monospace;
+    text-align: right;
+    border: 1px solid white;
+    background: black;
+    font-size: 20pt;
+}
+
+#keyboard_div {
+    border: dotted 3px white;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    font-family: monospace;
+    border-radius: 3em;
+}
+
+footer {
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    border: 3px dotted white;
+    border-radius: 3em;
+    font-size: 2em;
+}
+
+#symbol {
+    width: 5%;
+    font-family: monospace;
+    text-align: right;
+    border: 1px solid white;
+    background: black;
+    font-size: 20pt;
+}
+
+#second_num {
+     width: 43%;
+    font-family: monospace;
+    text-align: right;
+    border: 1px solid white;
+    background: black;
+    font-size: 20pt;
+}
+
+#first_num {
+
+}
+
+#result_num {
+    width: 94%;
+    border: 1px solid white;
+    font-family: monospace;
+    font-size: 20pt;
+    text-align: right;
+    background: black;
+}
+
+.num_button {
+    background: black;
+    color: white;
+    font-family: monospace;
+    font-size: 4em;
+    border: 2px solid white;
+}
+.num_button:active{
+    background-color: white;
+    color: black;
+}

@@ -3,15 +3,48 @@
     <head>
         <title>Standard Calculator</title>
         <link href="CSS/default.css" rel="stylesheet" type="text/css">
+        <script src="JS/main.js">
+        /*
+         * numToScreen() - displays a number in the appropriate input field when a button is clicked
+         * */
+        </script>
     </head>
     <body>
         <header>Standard Calculator</header>
         <br>
-        <div id='img_div'>
-            <img src="">
+
+        <div id="keyboard_div">
+            <br>
+            <input type="text" id="first_num">
+            <input type="text" id="symbol">
+            <input type="text" id="second_num"><br>
+            <input type="text" id="result_num"><br><br>
+            <input type="button" class="num_button" value=7 onclick="numToScreen('1')">
+            <input type="button" class="num_button" value=8 onclick="numToScreen('2')">
+            <input type="button" class="num_button" value=9 onclick="numToScreen('3')">
+            <input type="button" class="num_button" value=+>
+            <input type="button" class="num_button" value=-><br>
+            <input type="button" class="num_button" value=4 onclick="numToScreen('4')">
+            <input type="button" class="num_button" value=5 onclick="numToScreen('5')">
+            <input type="button" class="num_button" value=6 onclick="numToScreen('6')">
+            <input type="button" class="num_button" value=*>
+            <input type="button" class="num_button" value=/><br>
+            <input type="button" class="num_button" value=1 onclick="numToScreen('1')">
+            <input type="button" class="num_button" value=2 onclick="numToScreen('2')">
+            <input type="button" class="num_button" value=3 onclick="numToScreen('3')">
+            <input type="button" class="num_button" value=!>
+            <input type="button" class="num_button" value=C><br>
+            <input type="button" class="num_button" value=" 0 ">
+            <input type="button" class="num_button" value=.>
+
+            <input type="button" class="num_button" value=' = '>
+            <br><br>
+
         </div>
-        <div id="keyboard_div"><?php include "PHP/keyboard.php";?></div>
-        </div>
+        <br>
+       <footer>
+            &copy; Magnum Opus Productions | 2014
+        </footer>
 
     </body>
 </html>

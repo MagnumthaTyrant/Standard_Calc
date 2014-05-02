@@ -20,7 +20,9 @@ header {
     margin: auto;
     border-radius: 3em;
 }
-
+input{
+    color: white;
+}
 #first_num {
     width: 43%;
     font-family: monospace;
@@ -66,10 +68,6 @@ footer {
     font-size: 20pt;
 }
 
-#first_num {
-
-}
-
 #result_num {
     width: 94%;
     border: 1px solid white;
@@ -89,4 +87,12 @@ footer {
 .num_button:active{
     background-color: white;
     color: black;
+}
+
+aside {
+    position: absolute;
+    color: white;
+    left: 0%;
+    top: 10%;
+    border: dotter white 2px;
 }

@@ -6,7 +6,9 @@
  *            clearAll()    - clears the all the input fields.
  *            useSign()     - checks if the user has inputed a number into the first text field and inserts a sign into the symbol fields as well as
  *                            updating the value of sign_used.
- */
+ *            add()         - adds two numbers and returns the result.
+ *            subtract()    -
+*/
 /* GLOBAL VARIABLES */
 var sign_used;
 /* GLOBAL VARIABLES */
@@ -14,7 +16,7 @@ var sign_used;
 //numToScreen - displays the number pressed in the appropriate text box based on whether or not a sign button has been pressed.
 function numToScreen(num) {
     "use strict";
-    if (sign_used === null) {
+    if (sign_used == null) {
         first_num.value += num;
     } else {
         second_num.value += num;
@@ -27,7 +29,7 @@ function clearAll() {
         first_num.value = null;
         second_num.value = null;
         symbol.value = null;
-        result.value = null;
+        result_num.value = null;
         sign_used = null;
     }
 }
@@ -37,7 +39,7 @@ function useSign(sign){
     var r;
     if( first_num.value == "" || first_num.value == null ){
         alert( "Please insert a number first!" );
-    } else if ( sign_used == 0 ) {
+    } else if ( sign_used == 0 || sign_used == null ) {
         symbol.value = sign;
         sign_used = sign;
     } else {
@@ -73,3 +75,52 @@ function pow(x, y){
     "use strict";
     return Math.pow(parseFloat(x), parseFloat(y));
 }
+
+function factorial(x){
+    var result = 1;
+    for( i = 1; i <= parseInt(x); i++ ){
+        result *= i;
+    }
+    return result;
+}
+function checkFields(){
+    if( first_num.value == "" || first_num.value == null ){
+        alert("Please inser a number into the first text field!");
+        return false;
+    }
+    if( symbol.value == "" || symbol.value == null ){
+        alert("Please select a symbol!");
+        return false;
+    }
+    if( second_num.value == "" || second_num.value == null ){
+        alert("Please insert a number into the second text field");
+        return false;
+    }
+    return true;
+}
+function doMath(){
+    if( checkFields() ){
+        switch( sign_used ){
+            case '+':
+                result_num.value = add(first_num.value, second_num.value);
+            break;
+            case '-':
+                result_num.value = subtract(first_num.value, second_num.value);
+            break;
+            case '*':
+                result_num.value = multiply(first_num.value, second_num.value);
+            break;
+            case '/':
+                result_num.value = divide(first_num.value, second_num.value);
+            break;
+            case '^':
+                result_num.value = pow(first_num.value, second_num.value);
+            break;
+        }
+        first_num.value = null;
+        second_num.value = null;
+        symbol.value = null;
+        sign_used = null;
+    }
+}
+

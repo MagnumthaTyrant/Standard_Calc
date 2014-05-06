@@ -7,7 +7,13 @@
  *            useSign()     - checks if the user has inputed a number into the first text field and inserts a sign into the symbol fields as well as
  *                            updating the value of sign_used.
  *            add()         - adds two numbers and returns the result.
- *            subtract()    -
+ *            subtract()    - subtracts one number from another and returns the result.
+ *            multiply()    - multiplies two numbers and returns the product.
+ *            divide()      - divides one number by another and returns the result.
+ *            pow()         - returns a number to power n.
+ *            factorial()   - returns the factorial of a number.
+ *            checkFields() - checks the input fields to ensure vaild input exists and returns a boolean.
+ *            doMath()      - returns the result of the input to the screen and clears the
 */
 /* GLOBAL VARIABLES */
 var sign_used;
@@ -77,13 +83,16 @@ function pow(x, y){
 }
 
 function factorial(x){
+    "use strict";
     var result = 1;
     for( i = 1; i <= parseInt(x); i++ ){
         result *= i;
     }
-    return result;
+    result_num.value =  result;
 }
+
 function checkFields(){
+    "use strict";
     if( first_num.value == "" || first_num.value == null ){
         alert("Please inser a number into the first text field!");
         return false;
@@ -99,6 +108,7 @@ function checkFields(){
     return true;
 }
 function doMath(){
+    "use strict";
     if( checkFields() ){
         switch( sign_used ){
             case '+':

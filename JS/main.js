@@ -1,5 +1,5 @@
 /*
- * Author : Max-Andre Zil
+ * Author : Max-Andre Zils
  * Version: 0.21
  * Date: 29.04.2014
  * Functions: numToScreen() - displays the number pressed in the appropriate text field
@@ -16,5 +16,13 @@ function numToScreen( num ){
         first_num.value += num;
     }else{
         second_num.value += num;
+    }
+}
+function clearAll(){
+    var clear_inputs = confirm( "Are you sure you want clear all fields?" );
+    if( clear_inputs ){
+        first_num.value = null;
+        second_num.value = null;
+
     }
 }

@@ -8,7 +8,9 @@
          * numToScreen() - displays a number in the appropriate input field when a button is clicked
          * signToScreen() - displays the sign pressed and changes the value of sign_used
          *  */
-        </script>
+          </script>
+          <meta charset="utf-8">
+
     </head>
     <body>
         <header>Standard Calculator</header>
@@ -24,6 +26,7 @@
             <input type="text" id="symbol">
             <input type="text" id="second_num"><br>
             <input type="text" id="result_num"><br><br>
+<<<<<<< HEAD
             <input type="button" class="num_button" value='7' onclick="numToScreen( '7' );">
             <input type="button" class="num_button" value='8' onclick="numToScreen( '8' )">
             <input type="button" class="num_button" value='9' onclick="numToScreen( '9' )">
@@ -39,6 +42,23 @@
             <input type="button" class="num_button" value=3 onclick="numToScreen('3')">
             <input type="button" class="num_button" value=! onclick="signToScreen('!')">
             <input type="button" class="num_button" value=C onclick="clearAll()"><br>
+=======
+            <input type="button" class="num_button" value='7' onclick="numToScreen('7');">
+            <input type="button" class="num_button" value='8' onclick="numToScreen('8')">
+            <input type="button" class="num_button" value='9' onclick="numToScreen('9')">
+            <input type="button" class="num_button" value='+' onclick="useSign('+')" >
+            <input type="button" class="num_button" value='-' onclick="useSign('-')"><br>
+            <input type="button" class="num_button" value='4' onclick="numToScreen('4')">
+            <input type="button" class="num_button" value='5' onclick="numToScreen('5')">
+            <input type="button" class="num_button" value='6' onclick="numToScreen('6')">
+            <input type="button" class="num_button" value='*' onclick="useSign('*')">
+            <input type="button" class="num_button" value='/' onclick="useSign('/')"><br>
+            <input type="button" class="num_button" value=1 onclick="numToScreen('1')">
+            <input type="button" class="num_button" value=2 onclick="numToScreen('2')">
+            <input type="button" class="num_button" value=3 onclick="numToScreen('3')">
+            <input type="button" class="num_button" value='!' onclick="factorial('first_num.value')">
+            <input type="button" class="num_button" value='C' onclick="clearAll()"><br>
+>>>>>>> 6e3665c35396b78467dce1f57d31f1b8b3b6600c
             <input type="button" class="num_button" value=" 0 " onclick="numToScreen('0')">
             <input type="button" class="num_button" value=.>
 
